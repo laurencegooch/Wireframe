@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <ZBarReaderViewDelegate>
+{
+    ZBarCameraSimulator *cameraSim;
+}
+
+@property (nonatomic, retain) IBOutlet ZBarReaderView *readerView;
+//@property (nonatomic, retain) IBOutlet UITextView *resultText;
 
 @end
