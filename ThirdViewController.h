@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThirdViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface ThirdViewController : UITableViewController <UIScrollViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 {
-    IBOutlet UIPickerView *pickerView;
     NSMutableArray *arrayTurbines;
 }
-    
+
+
+@property (strong, nonatomic) IBOutlet UIPickerView *turbinePicker;
+
     
 @end

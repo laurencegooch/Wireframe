@@ -35,7 +35,9 @@
     [arrayTurbines addObject:@"Turbine 5"];
     [arrayTurbines addObject:@"Turbine 6"];
     [arrayTurbines addObject:@"Turbine 7"];
+    [arrayTurbines addObject:@"Quarantine"];
 }
+
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {
     

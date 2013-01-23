@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZBarSDK.h"
 
 @interface FirstViewController : UIViewController <ZBarReaderViewDelegate>
 {
     ZBarCameraSimulator *cameraSim;
 }
 
-@property (nonatomic, retain) IBOutlet ZBarReaderView *readerView;
-//@property (nonatomic, retain) IBOutlet UITextView *resultText;
+@property (nonatomic, strong) IBOutlet ZBarReaderView *readerView;
+@property (nonatomic, retain) IBOutlet UITextView *resultText;
+
+- (IBAction)lightButtonPressed:(id)sender;
 
 @end

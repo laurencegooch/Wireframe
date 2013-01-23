@@ -35,6 +35,18 @@
 		E2C45B591695C92C0081E5FE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28D0BE91695B75A00134AFB /* FirstViewController.m */; };
 		E2C45B5D1695E3230081E5FE /* accumilator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2C45B5C1695E3230081E5FE /* accumilator.jpg */; };
 		E2C45B631695ECDD0081E5FE /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C45B621695ECDD0081E5FE /* ThirdViewController.m */; };
+		E2CFE4B916B01F4500DC59CB /* RRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AF316B01CA7007F2083 /* RRImageStore.m */; };
+		E2EABDD3169DC7B500D8E210 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EABDD2169DC7B500D8E210 /* photo1.png */; };
+		E2F45AC416AFE3A0007F2083 /* PartCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AC216AFE3A0007F2083 /* PartCD.xcdatamodeld */; };
+		E2F45ADA16AFF2D7007F2083 /* RRMaintenance.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AD916AFF2D7007F2083 /* RRMaintenance.m */; };
+		E2F45ADD16AFF323007F2083 /* RRPart.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F45ADC16AFF323007F2083 /* RRPart.m */; };
+		E2F45AE216AFF408007F2083 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F45AE116AFF408007F2083 /* CoreData.framework */; };
+		E2F45AE516AFF983007F2083 /* RRPartStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AE416AFF983007F2083 /* RRPartStore.m */; };
+		E2F45AEB16B00A67007F2083 /* RRPartType.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AEA16B00A67007F2083 /* RRPartType.m */; };
+		E2F5DC2B16A01B5A001E8C55 /* Part.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DC2A16A01B5A001E8C55 /* Part.m */; };
+		E2F5DC3216A04A69001E8C55 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DC3116A04A69001E8C55 /* FourthViewController.m */; };
+		E2F5DC3516A04E28001E8C55 /* PartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DC3416A04E28001E8C55 /* PartCell.m */; };
+		E2F5DC3716A04EA2001E8C55 /* PartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F5DC3616A04EA2001E8C55 /* PartCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +105,26 @@
 		E2C45B5C1695E3230081E5FE /* accumilator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accumilator.jpg; sourceTree = "<group>"; };
 		E2C45B611695ECDD0081E5FE /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = ../ThirdViewController.h; sourceTree = "<group>"; };
 		E2C45B621695ECDD0081E5FE /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = ../ThirdViewController.m; sourceTree = "<group>"; };
+		E2EABDD2169DC7B500D8E210 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
+		E2F45AC316AFE3A0007F2083 /* PartCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PartCD.xcdatamodel; sourceTree = "<group>"; };
+		E2F45AD816AFF2D7007F2083 /* RRMaintenance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRMaintenance.h; path = ../RRMaintenance.h; sourceTree = "<group>"; };
+		E2F45AD916AFF2D7007F2083 /* RRMaintenance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRMaintenance.m; path = ../RRMaintenance.m; sourceTree = "<group>"; };
+		E2F45ADB16AFF323007F2083 /* RRPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPart.h; sourceTree = "<group>"; };
+		E2F45ADC16AFF323007F2083 /* RRPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPart.m; sourceTree = "<group>"; };
+		E2F45AE116AFF408007F2083 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E2F45AE316AFF983007F2083 /* RRPartStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPartStore.h; sourceTree = "<group>"; };
+		E2F45AE416AFF983007F2083 /* RRPartStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPartStore.m; sourceTree = "<group>"; };
+		E2F45AE916B00A67007F2083 /* RRPartType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPartType.h; sourceTree = "<group>"; };
+		E2F45AEA16B00A67007F2083 /* RRPartType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPartType.m; sourceTree = "<group>"; };
+		E2F45AF216B01CA7007F2083 /* RRImageStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRImageStore.h; sourceTree = "<group>"; };
+		E2F45AF316B01CA7007F2083 /* RRImageStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRImageStore.m; sourceTree = "<group>"; };
+		E2F5DC2916A01B5A001E8C55 /* Part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Part.h; sourceTree = "<group>"; };
+		E2F5DC2A16A01B5A001E8C55 /* Part.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Part.m; sourceTree = "<group>"; };
+		E2F5DC3016A04A69001E8C55 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourthViewController.h; path = ../FourthViewController.h; sourceTree = "<group>"; };
+		E2F5DC3116A04A69001E8C55 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourthViewController.m; path = ../FourthViewController.m; sourceTree = "<group>"; };
+		E2F5DC3316A04E28001E8C55 /* PartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartCell.h; sourceTree = "<group>"; };
+		E2F5DC3416A04E28001E8C55 /* PartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartCell.m; sourceTree = "<group>"; };
+		E2F5DC3616A04EA2001E8C55 /* PartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PartCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F45AE216AFF408007F2083 /* CoreData.framework in Frameworks */,
 				E28D0C271695B83900134AFB /* libiconv.dylib in Frameworks */,
 				E28D0C251695B82C00134AFB /* QuartzCore.framework in Frameworks */,
 				E28D0C231695B82300134AFB /* CoreVideo.framework in Frameworks */,
@@ -137,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E28D0C261695B83900134AFB /* libiconv.dylib */,
+				E2F45AE116AFF408007F2083 /* CoreData.framework */,
 				E28D0C241695B82C00134AFB /* QuartzCore.framework */,
 				E28D0C221695B82300134AFB /* CoreVideo.framework */,
 				E28D0C201695B81A00134AFB /* CoreMedia.framework */,
@@ -151,15 +185,33 @@
 		E28D0BD31695B75A00134AFB /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				E2F45AF216B01CA7007F2083 /* RRImageStore.h */,
+				E2F45AF316B01CA7007F2083 /* RRImageStore.m */,
+				E2F5DC3616A04EA2001E8C55 /* PartCell.xib */,
 				E28D0BDC1695B75A00134AFB /* AppDelegate.h */,
 				E28D0BDD1695B75A00134AFB /* AppDelegate.m */,
+				E2F45AE316AFF983007F2083 /* RRPartStore.h */,
+				E2F45AE416AFF983007F2083 /* RRPartStore.m */,
 				E28D0BE51695B75A00134AFB /* MainStoryboard.storyboard */,
+				E2F45AC216AFE3A0007F2083 /* PartCD.xcdatamodeld */,
+				E2F45AE916B00A67007F2083 /* RRPartType.h */,
+				E2F45AEA16B00A67007F2083 /* RRPartType.m */,
+				E2F45ADB16AFF323007F2083 /* RRPart.h */,
+				E2F45ADC16AFF323007F2083 /* RRPart.m */,
+				E2F45AD816AFF2D7007F2083 /* RRMaintenance.h */,
+				E2F45AD916AFF2D7007F2083 /* RRMaintenance.m */,
+				E2F5DC3316A04E28001E8C55 /* PartCell.h */,
+				E2F5DC3416A04E28001E8C55 /* PartCell.m */,
+				E2F5DC2916A01B5A001E8C55 /* Part.h */,
+				E2F5DC2A16A01B5A001E8C55 /* Part.m */,
 				E28D0BE81695B75A00134AFB /* FirstViewController.h */,
+				E28D0BE91695B75A00134AFB /* FirstViewController.m */,
 				E28D0BEF1695B75A00134AFB /* SecondViewController.h */,
 				E28D0BF01695B75A00134AFB /* SecondViewController.m */,
 				E2C45B611695ECDD0081E5FE /* ThirdViewController.h */,
 				E2C45B621695ECDD0081E5FE /* ThirdViewController.m */,
-				E28D0BE91695B75A00134AFB /* FirstViewController.m */,
+				E2F5DC3016A04A69001E8C55 /* FourthViewController.h */,
+				E2F5DC3116A04A69001E8C55 /* FourthViewController.m */,
 				E28D0BEB1695B75A00134AFB /* first.png */,
 				E28D0BED1695B75A00134AFB /* first@2x.png */,
 				E28D0BF21695B75A00134AFB /* second.png */,
@@ -172,6 +224,7 @@
 		E28D0BD41695B75A00134AFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2EABDD2169DC7B500D8E210 /* photo1.png */,
 				E2C45B5C1695E3230081E5FE /* accumilator.jpg */,
 				E28D0BD51695B75A00134AFB /* Wireframe-Info.plist */,
 				E28D0BD61695B75A00134AFB /* InfoPlist.strings */,
@@ -313,6 +366,8 @@
 				E28D0C1C1695B7D700134AFB /* zbar-helpicons.png in Resources */,
 				E28D0C1D1695B7D700134AFB /* zbar-samples.png in Resources */,
 				E2C45B5D1695E3230081E5FE /* accumilator.jpg in Resources */,
+				E2EABDD3169DC7B500D8E210 /* photo1.png in Resources */,
+				E2F5DC3716A04EA2001E8C55 /* PartCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,11 +378,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CFE4B916B01F4500DC59CB /* RRImageStore.m in Sources */,
 				E28D0BDA1695B75A00134AFB /* main.m in Sources */,
 				E28D0BDE1695B75A00134AFB /* AppDelegate.m in Sources */,
 				E28D0BF11695B75A00134AFB /* SecondViewController.m in Sources */,
 				E2C45B591695C92C0081E5FE /* FirstViewController.m in Sources */,
 				E2C45B631695ECDD0081E5FE /* ThirdViewController.m in Sources */,
+				E2F5DC2B16A01B5A001E8C55 /* Part.m in Sources */,
+				E2F5DC3216A04A69001E8C55 /* FourthViewController.m in Sources */,
+				E2F5DC3516A04E28001E8C55 /* PartCell.m in Sources */,
+				E2F45AC416AFE3A0007F2083 /* PartCD.xcdatamodeld in Sources */,
+				E2F45ADA16AFF2D7007F2083 /* RRMaintenance.m in Sources */,
+				E2F45ADD16AFF323007F2083 /* RRPart.m in Sources */,
+				E2F45AE516AFF983007F2083 /* RRPartStore.m in Sources */,
+				E2F45AEB16B00A67007F2083 /* RRPartType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +522,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2F45AC216AFE3A0007F2083 /* PartCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2F45AC316AFE3A0007F2083 /* PartCD.xcdatamodel */,
+			);
+			currentVersion = E2F45AC316AFE3A0007F2083 /* PartCD.xcdatamodel */;
+			path = PartCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E28D0BC01695B75A00134AFB /* Project object */;
 }

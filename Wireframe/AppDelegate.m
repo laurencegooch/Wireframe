@@ -7,12 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "ZBarSDK.h"
+#import "RRPartType.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // force view class to load so it may be referenced directly from NIB
+    [ZBarReaderView class];
+    
     return YES;
 }
 							

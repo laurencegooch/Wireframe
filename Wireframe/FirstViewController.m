@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface FirstViewController ()
 
@@ -24,7 +25,7 @@
     // ensure initial camera orientation is correctly set
     UIApplication *app = [UIApplication sharedApplication];
     [self.readerView willRotateToInterfaceOrientation: app.statusBarOrientation
-                                        duration: 0];
+                                             duration: 0];
     
     // you can use this to support the simulator
     if(TARGET_IPHONE_SIMULATOR) {
@@ -32,12 +33,12 @@
                      initWithViewController: self];
         cameraSim.readerView = self.readerView;
     }
+    
+    self.readerView.showsFPS = YES;
+    
+    self.readerView.torchMode = AVCaptureTorchModeOff;
 }
 
-- (void) viewDidUnload
-{
-    [super viewDidUnload];
-}
 
 - (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) orient
 {
@@ -72,15 +73,22 @@
     [self.readerView stop];
 }
 
-- (void) readerView: (ZBarReaderView*) view
-     didReadSymbols: (ZBarSymbolSet*) syms
+- (void) readerView: (ZBarReaderView *) view
+     didReadSymbols: (ZBarSymbolSet *) syms
           fromImage: (UIImage*) img
 {
     // do something useful with results
     for(ZBarSymbol *sym in syms) {
-        //self.resultText.text = sym.data;
+        self.resultText.text = sym.data;
         break;
     }
 }
 
+- (IBAction)lightButtonPressed:(id)sender {
+    if (self.readerView.torchMode == AVCaptureTorchModeOff) {
+        self.readerView.torchMode = AVCaptureTorchModeOn;
+    } else {
+        self.readerView.torchMode = AVCaptureTorchModeOff;
+    }
+}
 @end

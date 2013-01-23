@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RRMaintenance" representedClassName="RRMaintenance" syncable="YES">
+        <attribute name="dateOfMaintenance" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="maintenanceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="site" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="turbine" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="part" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RRPart" inverseName="maintenanceHistory" inverseEntity="RRPart" syncable="YES"/>
+    </entity>
+    <entity name="RRPart" representedClassName="RRPart" syncable="YES">
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="maintenanceHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RRMaintenance" inverseName="part" inverseEntity="RRMaintenance" syncable="YES"/>
+        <relationship name="partType" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RRPartType" inverseName="parts" inverseEntity="RRPartType" syncable="YES"/>
+    </entity>
+    <entity name="RRPartType" representedClassName="RRPartType" syncable="YES">
+        <attribute name="hasSerialNumber" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" transient="YES" syncable="YES"/>
+        <attribute name="thumbnailData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="parts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RRPart" inverseName="partType" inverseEntity="RRPart" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RRPartType" positionX="-4581" positionY="-1954" width="128" height="133"/>
+        <element name="RRPart" positionX="-4347" positionY="-1836" width="128" height="88"/>
+        <element name="RRMaintenance" positionX="-4097" positionY="-1764" width="128" height="118"/>
+    </elements>
+</model>
