@@ -7,14 +7,14 @@
 //
 
 #import "RRPart.h"
-#import "RRMaintenance.h"
+#import "RRMaintenanceEvent.h"
 #import "RRPartType.h"
 
 
 @implementation RRPart
 
 @dynamic serialNumber;
+@dynamic maintenanceEvents;
 @dynamic partType;
-@dynamic maintenanceHistory;
 
 @end

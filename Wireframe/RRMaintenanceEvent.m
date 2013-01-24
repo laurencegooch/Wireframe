@@ -1,21 +1,21 @@
 //
-//  RRMaintenance.m
+//  RRMaintenanceEvent.m
 //  Wireframe
 //
 //  Created by leeloo on 23/01/2013.
 //  Copyright (c) 2013 cocoa-ocelot. All rights reserved.
 //
 
-#import "RRMaintenance.h"
+#import "RRMaintenanceEvent.h"
 #import "RRPart.h"
 
 
-@implementation RRMaintenance
+@implementation RRMaintenanceEvent
 
-@dynamic site;
-@dynamic maintenanceType;
-@dynamic turbine;
 @dynamic dateOfMaintenance;
+@dynamic maintenanceType;
+@dynamic site;
+@dynamic turbine;
 @dynamic part;
 
 @end

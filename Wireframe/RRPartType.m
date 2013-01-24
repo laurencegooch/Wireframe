@@ -2,7 +2,7 @@
 //  RRPartType.m
 //  Wireframe
 //
-//  Created by leeloo on 23/01/2013.
+//  Created by leeloo on 24/01/2013.
 //  Copyright (c) 2013 cocoa-ocelot. All rights reserved.
 //
 
@@ -12,11 +12,12 @@
 
 @implementation RRPartType
 
-@dynamic productID;
 @dynamic hasSerialNumber;
+@dynamic imageKey;
+@dynamic productID;
 @dynamic thumbnail;
 @dynamic thumbnailData;
-@dynamic imageKey;
+@dynamic name;
 @dynamic parts;
 
 @end

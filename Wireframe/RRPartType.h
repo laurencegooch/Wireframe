@@ -2,7 +2,7 @@
 //  RRPartType.h
 //  Wireframe
 //
-//  Created by leeloo on 23/01/2013.
+//  Created by leeloo on 24/01/2013.
 //  Copyright (c) 2013 cocoa-ocelot. All rights reserved.
 //
 
@@ -13,11 +13,12 @@
 
 @interface RRPartType : NSManagedObject
 
-@property (nonatomic, retain) NSString *productID;
 @property (nonatomic, retain) NSNumber *hasSerialNumber;
+@property (nonatomic, retain) NSString *imageKey;
+@property (nonatomic, retain) NSString *productID;
 @property (nonatomic, retain) UIImage *thumbnail;
 @property (nonatomic, retain) NSData *thumbnailData;
-@property (nonatomic, retain) NSString *imageKey;
+@property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSSet *parts;
 @end
 

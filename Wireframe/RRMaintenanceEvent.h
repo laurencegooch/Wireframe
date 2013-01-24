@@ -1,5 +1,5 @@
 //
-//  RRMaintenance.h
+//  RRMaintenanceEvent.h
 //  Wireframe
 //
 //  Created by leeloo on 23/01/2013.
@@ -11,12 +11,12 @@
 
 @class RRPart;
 
-@interface RRMaintenance : NSManagedObject
+@interface RRMaintenanceEvent : NSManagedObject
 
-@property (nonatomic, retain) NSString * site;
-@property (nonatomic, retain) NSString * maintenanceType;
-@property (nonatomic, retain) NSString * turbine;
 @property (nonatomic, retain) NSDate * dateOfMaintenance;
+@property (nonatomic, retain) NSString * maintenanceType;
+@property (nonatomic, retain) NSString * site;
+@property (nonatomic, retain) NSString * turbine;
 @property (nonatomic, retain) RRPart *part;
 
 @end

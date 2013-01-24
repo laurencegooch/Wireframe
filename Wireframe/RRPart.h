@@ -9,20 +9,20 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class RRMaintenance, RRPartType;
+@class RRMaintenanceEvent, RRPartType;
 
 @interface RRPart : NSManagedObject
 
 @property (nonatomic, retain) NSString * serialNumber;
+@property (nonatomic, retain) NSSet *maintenanceEvents;
 @property (nonatomic, retain) RRPartType *partType;
-@property (nonatomic, retain) NSSet *maintenanceHistory;
 @end
 
 @interface RRPart (CoreDataGeneratedAccessors)
 
-- (void)addMaintenanceHistoryObject:(RRMaintenance *)value;
-- (void)removeMaintenanceHistoryObject:(RRMaintenance *)value;
-- (void)addMaintenanceHistory:(NSSet *)values;
-- (void)removeMaintenanceHistory:(NSSet *)values;
+- (void)addMaintenanceEventsObject:(RRMaintenanceEvent *)value;
+- (void)removeMaintenanceEventsObject:(RRMaintenanceEvent *)value;
+- (void)addMaintenanceEvents:(NSSet *)values;
+- (void)removeMaintenanceEvents:(NSSet *)values;
 
 @end
