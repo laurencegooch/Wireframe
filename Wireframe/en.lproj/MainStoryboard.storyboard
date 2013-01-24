@@ -46,18 +46,19 @@
                     <connections>
                         <outlet property="readerView" destination="Z6V-yh-WvX" id="Fw0-5w-gdh"/>
                         <outlet property="resultText" destination="LZq-O2-KGh" id="5oz-Bd-o2a"/>
+                        <segue destination="4it-L4-P1k" kind="modal" identifier="PartIdentifiedSegue" id="Yti-TL-57q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="-138"/>
+            <point key="canvasLocation" x="653" y="170"/>
         </scene>
         <!--Fourth View Controller - Scanned Part-->
         <scene sceneID="wwy-M6-Axk">
             <objects>
                 <tableViewController id="0RR-Kg-lft" customClass="FourthViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="70h-qr-rON">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -160,14 +161,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1E-Pq-6hC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="498"/>
+            <point key="canvasLocation" x="1186" y="898"/>
         </scene>
         <!--Third View Controller - Breakdown-->
         <scene sceneID="H9s-AH-43d">
             <objects>
                 <tableViewController id="EuO-UZ-Fst" customClass="ThirdViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="vQd-u3-iJn">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -225,7 +226,54 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFk-fK-RTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="316"/>
+            <point key="canvasLocation" x="1731" y="898"/>
+        </scene>
+        <!--Part List View Controller - List-->
+        <scene sceneID="REZ-Je-rDR">
+            <objects>
+                <tableViewController id="XYf-8Y-v5g" customClass="PartListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5wF-R9-s1z">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="xAw-i8-4Xu" detailTextLabel="TBF-xl-Z3d" style="IBUITableViewCellStyleSubtitle" id="lH0-SJ-YOy">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xAw-i8-4Xu">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TBF-xl-Z3d">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XYf-8Y-v5g" id="dEk-aP-dBW"/>
+                            <outlet property="delegate" destination="XYf-8Y-v5g" id="O13-4q-xUg"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="List" id="tgp-Mn-J86"/>
+                    <navigationItem key="navigationItem" id="YO9-SU-SRz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zP3-4Q-2LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-430"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -240,11 +288,12 @@
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="4it-L4-P1k" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="XYf-8Y-v5g" kind="relationship" relationship="viewControllers" id="glB-A7-1Pg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="92" y="170"/>
         </scene>
         <!--Navigation Controller - Parts list-->
         <scene sceneID="i5x-Ri-cU6">
@@ -263,50 +312,19 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIY-1b-EMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="653" y="898"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="lightButtonPressed:"/>
-                <relationship kind="outlet" name="readerView" candidateClass="ZBarReaderView"/>
-                <relationship kind="outlet" name="resultText" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="FourthViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FourthViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="selectedPartCell" candidateClass="PartCell"/>
-            </relationships>
-        </class>
-        <class className="PartCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PartCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="productCodeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serialNumberLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="thumbnail" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="ThirdViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="turbinePicker" candidateClass="UIPickerView"/>
-            </relationships>
-        </class>
-        <class className="ZBarReaderView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZBarReaderView.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yti-TL-57q"/>
+    </inferredMetricsTieBreakers>
 </document>

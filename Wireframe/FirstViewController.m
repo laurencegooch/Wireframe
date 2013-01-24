@@ -7,6 +7,9 @@
 //
 
 #import "FirstViewController.h"
+#import "FourthViewController.h"
+#import "RRPartStore.h"
+#import "RRPartType.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface FirstViewController ()
@@ -81,6 +84,39 @@
     for(ZBarSymbol *sym in syms) {
         self.resultText.text = sym.data;
         break;
+    }
+    
+    // find the productID in the sharedStore
+    NSArray *store = [[RRPartStore sharedStore] allItems];
+    NSString *productID = self.resultText.text;
+    NSPredicate *p = [NSPredicate predicateWithFormat:@"productID == %@", productID];
+    NSArray *parts = [store filteredArrayUsingPredicate:p];
+    
+    // did we find a part??
+    // if(part) --> performSegue
+    if ([parts count] > 0) {
+        self.selectedPart = [parts objectAtIndex:0];
+        NSLog(@"Selected Part: %@, %@", self.selectedPart.productID, self.selectedPart.name);
+        [self performSegueWithIdentifier:@"PartIdentifiedSegue" sender:self];
+    }
+
+
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"PartIdentifiedSegue"]) {
+        
+        // Get destination view
+        UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
+        FourthViewController *vc = (FourthViewController *)navController.topViewController;
+        
+        [vc setSelectedPartType:self.selectedPart];
+        
+        // Pass the information to your destination view
+        //vc.selectedPartCell.productCodeLabel.textLabel = self.selectedPart.productID;
+        //vc.selectedPartCell.descriptionLabel.textLabel = self.selectedPart.name;
+
     }
 }
 

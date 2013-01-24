@@ -31,6 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if (self.selectedPartType) {
+        self.selectedPartCell.productCodeLabel.text = self.selectedPartType.productID;
+        self.selectedPartCell.descriptionLabel.text = self.selectedPartType.name;
+    }
 }
 
 - (void)didReceiveMemoryWarning

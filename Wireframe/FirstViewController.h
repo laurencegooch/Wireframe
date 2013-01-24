@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ZBarSDK.h"
+#import "RRPartType.h"
 
 @interface FirstViewController : UIViewController <ZBarReaderViewDelegate>
 {
@@ -16,6 +17,7 @@
 
 @property (nonatomic, strong) IBOutlet ZBarReaderView *readerView;
 @property (nonatomic, retain) IBOutlet UITextView *resultText;
+@property (nonatomic, retain) RRPartType *selectedPart;
 
 - (IBAction)lightButtonPressed:(id)sender;
 

@@ -10,8 +10,22 @@
 #import "RRPartType.h"
 #import "RRImageStore.h"
 
-
 @implementation RRPartStore
+
++ (RRPartStore *)sharedStore
+{
+    static RRPartStore *sharedStore = nil;
+    if (!sharedStore) {
+        sharedStore = [[super allocWithZone:nil] init];
+    }
+    
+    return sharedStore;
+}
+
++ (id)allocWithZone:(NSZone *)zone
+{
+    return [self sharedStore];
+}
 
 - (id)init
 {
@@ -23,9 +37,19 @@
         
         NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
         
-        // Where does the SLite file go?
+        // Where does the SQLite file go?
         NSString *path = [self itemArchivePath];
         NSURL *storeURL = [NSURL fileURLWithPath:path];
+        
+        // If no existing SQLite file load the imported data sqlite file
+        if (![[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]]) {
+            NSURL *preloadURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"RRImportCoreData" ofType:@"sqlite"]];
+            NSError* err = nil;
+            
+            if (![[NSFileManager defaultManager] copyItemAtURL:preloadURL toURL:storeURL error:&err]) {
+                NSLog(@"Oops, could copy preloaded data");
+            }
+        }
         
         NSError *error = nil;
         
@@ -86,7 +110,7 @@
         NSEntityDescription *e = [[model entitiesByName] objectForKey:@"RRPartType"];
         [request setEntity:e];
         
-        NSSortDescriptor *sd = [NSSortDescriptor sortDescriptorWithKey:@"orderingValue"
+        NSSortDescriptor *sd = [NSSortDescriptor sortDescriptorWithKey:@"productID"
                                                              ascending:YES];
 
         [request setSortDescriptors:[NSArray arrayWithObject:sd]];
@@ -124,6 +148,24 @@
     [context deleteObject:p];
     [allItems removeObjectIdenticalTo:p];
     
+}
+
+- (NSArray *)allItems
+{
+    return allItems;
+}
+
+- (RRPartType *)partForProductID:(NSString *)productID
+{
+    NSPredicate *p = [NSPredicate predicateWithFormat:@"productID == %@", productID];
+    NSArray *part = [allItems filteredArrayUsingPredicate:p];
+    
+    if ([part count] > 0) {
+        return [part objectAtIndex:0];
+    } else
+    {
+        return nil;
+    }
 }
 
 @end

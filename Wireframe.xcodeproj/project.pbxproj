@@ -39,6 +39,8 @@
 		E2CFE4C816B0494400DC59CB /* RRMaintenanceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE4C716B0494400DC59CB /* RRMaintenanceEvent.m */; };
 		E2CFE4CB16B0496500DC59CB /* RRPart.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE4CA16B0496500DC59CB /* RRPart.m */; };
 		E2CFE4FE16B140B500DC59CB /* RRPartType.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE4FD16B140B500DC59CB /* RRPartType.m */; };
+		E2CFE53E16B14F9500DC59CB /* RRImportCoreData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E2CFE53D16B14F9500DC59CB /* RRImportCoreData.sqlite */; };
+		E2CFE57B16B15A3F00DC59CB /* PartListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE57A16B15A3F00DC59CB /* PartListViewController.m */; };
 		E2EABDD3169DC7B500D8E210 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EABDD2169DC7B500D8E210 /* photo1.png */; };
 		E2F45AC416AFE3A0007F2083 /* PartCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AC216AFE3A0007F2083 /* PartCD.xcdatamodeld */; };
 		E2F45AE216AFF408007F2083 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F45AE116AFF408007F2083 /* CoreData.framework */; };
@@ -111,6 +113,9 @@
 		E2CFE4CA16B0496500DC59CB /* RRPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPart.m; sourceTree = "<group>"; };
 		E2CFE4FC16B140B500DC59CB /* RRPartType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPartType.h; sourceTree = "<group>"; };
 		E2CFE4FD16B140B500DC59CB /* RRPartType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPartType.m; sourceTree = "<group>"; };
+		E2CFE53D16B14F9500DC59CB /* RRImportCoreData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RRImportCoreData.sqlite; sourceTree = "<group>"; };
+		E2CFE57916B15A3F00DC59CB /* PartListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartListViewController.h; sourceTree = "<group>"; };
+		E2CFE57A16B15A3F00DC59CB /* PartListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartListViewController.m; sourceTree = "<group>"; };
 		E2EABDD2169DC7B500D8E210 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
 		E2F45AC316AFE3A0007F2083 /* PartCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PartCD.xcdatamodel; sourceTree = "<group>"; };
 		E2F45AE116AFF408007F2083 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -185,6 +190,7 @@
 		E28D0BD31695B75A00134AFB /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFE53D16B14F9500DC59CB /* RRImportCoreData.sqlite */,
 				E2F45AF216B01CA7007F2083 /* RRImageStore.h */,
 				E2F45AF316B01CA7007F2083 /* RRImageStore.m */,
 				E2F5DC3616A04EA2001E8C55 /* PartCell.xib */,
@@ -192,6 +198,8 @@
 				E28D0BDD1695B75A00134AFB /* AppDelegate.m */,
 				E2F45AE316AFF983007F2083 /* RRPartStore.h */,
 				E2F45AE416AFF983007F2083 /* RRPartStore.m */,
+				E2CFE57916B15A3F00DC59CB /* PartListViewController.h */,
+				E2CFE57A16B15A3F00DC59CB /* PartListViewController.m */,
 				E28D0BE51695B75A00134AFB /* MainStoryboard.storyboard */,
 				E2CFE4FC16B140B500DC59CB /* RRPartType.h */,
 				E2CFE4FD16B140B500DC59CB /* RRPartType.m */,
@@ -368,6 +376,7 @@
 				E2C45B5D1695E3230081E5FE /* accumilator.jpg in Resources */,
 				E2EABDD3169DC7B500D8E210 /* photo1.png in Resources */,
 				E2F5DC3716A04EA2001E8C55 /* PartCell.xib in Resources */,
+				E2CFE53E16B14F9500DC59CB /* RRImportCoreData.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +401,7 @@
 				E2CFE4C816B0494400DC59CB /* RRMaintenanceEvent.m in Sources */,
 				E2CFE4CB16B0496500DC59CB /* RRPart.m in Sources */,
 				E2CFE4FE16B140B500DC59CB /* RRPartType.m in Sources */,
+				E2CFE57B16B15A3F00DC59CB /* PartListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

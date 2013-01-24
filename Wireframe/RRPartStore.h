@@ -18,6 +18,10 @@
     NSManagedObjectModel *model;
 }
 
-- (void)loadAllItems;
++ (RRPartStore *)sharedStore;
+
+- (NSArray *)allItems;
+- (RRPartType *)partForProductID:(NSString *)productID;
+
 
 @end

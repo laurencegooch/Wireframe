@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "PartCell.h"
+#import "RRPartType.h"
 
 @interface FourthViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet PartCell *selectedPartCell;
+@property (strong, nonatomic) RRPartType *selectedPartType;
 @end
