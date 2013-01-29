@@ -43,7 +43,8 @@
         
         // If no existing SQLite file load the imported data sqlite file
         if (![[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]]) {
-            NSURL *preloadURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"RRImportCoreData" ofType:@"sqlite"]];
+            NSURL *preloadURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"RRImportCoreData"
+                                                                                       ofType:@"sqlite"]];
             NSError* err = nil;
             
             if (![[NSFileManager defaultManager] copyItemAtURL:preloadURL toURL:storeURL error:&err]) {

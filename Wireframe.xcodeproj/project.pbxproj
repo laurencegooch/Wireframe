@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20ADE2416B8119700047B37 /* 1301512001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E20ADE2316B8119700047B37 /* 1301512001.jpg */; };
+		E20ADE2616B811B400047B37 /* RRL-Logo-Blue-16.10.12.png in Resources */ = {isa = PBXBuildFile; fileRef = E20ADE2516B811B400047B37 /* RRL-Logo-Blue-16.10.12.png */; };
+		E20ADE2716B8129100047B37 /* RRImportCoreData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E20ADE2116B80A0400047B37 /* RRImportCoreData.sqlite */; };
 		E28D0BCE1695B75A00134AFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28D0BCD1695B75A00134AFB /* UIKit.framework */; };
 		E28D0BD01695B75A00134AFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28D0BCF1695B75A00134AFB /* Foundation.framework */; };
 		E28D0BD21695B75A00134AFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28D0BD11695B75A00134AFB /* CoreGraphics.framework */; };
@@ -33,15 +36,12 @@
 		E28D0C251695B82C00134AFB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28D0C241695B82C00134AFB /* QuartzCore.framework */; };
 		E28D0C271695B83900134AFB /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E28D0C261695B83900134AFB /* libiconv.dylib */; };
 		E2C45B591695C92C0081E5FE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28D0BE91695B75A00134AFB /* FirstViewController.m */; };
-		E2C45B5D1695E3230081E5FE /* accumilator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2C45B5C1695E3230081E5FE /* accumilator.jpg */; };
 		E2C45B631695ECDD0081E5FE /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C45B621695ECDD0081E5FE /* ThirdViewController.m */; };
 		E2CFE4B916B01F4500DC59CB /* RRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AF316B01CA7007F2083 /* RRImageStore.m */; };
 		E2CFE4C816B0494400DC59CB /* RRMaintenanceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE4C716B0494400DC59CB /* RRMaintenanceEvent.m */; };
 		E2CFE4CB16B0496500DC59CB /* RRPart.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE4CA16B0496500DC59CB /* RRPart.m */; };
 		E2CFE4FE16B140B500DC59CB /* RRPartType.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE4FD16B140B500DC59CB /* RRPartType.m */; };
-		E2CFE53E16B14F9500DC59CB /* RRImportCoreData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E2CFE53D16B14F9500DC59CB /* RRImportCoreData.sqlite */; };
 		E2CFE57B16B15A3F00DC59CB /* PartListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE57A16B15A3F00DC59CB /* PartListViewController.m */; };
-		E2EABDD3169DC7B500D8E210 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EABDD2169DC7B500D8E210 /* photo1.png */; };
 		E2F45AC416AFE3A0007F2083 /* PartCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AC216AFE3A0007F2083 /* PartCD.xcdatamodeld */; };
 		E2F45AE216AFF408007F2083 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F45AE116AFF408007F2083 /* CoreData.framework */; };
 		E2F45AE516AFF983007F2083 /* RRPartStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F45AE416AFF983007F2083 /* RRPartStore.m */; };
@@ -52,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E20ADE2116B80A0400047B37 /* RRImportCoreData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RRImportCoreData.sqlite; sourceTree = SOURCE_ROOT; };
+		E20ADE2316B8119700047B37 /* 1301512001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1301512001.jpg; sourceTree = "<group>"; };
+		E20ADE2516B811B400047B37 /* RRL-Logo-Blue-16.10.12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RRL-Logo-Blue-16.10.12.png"; sourceTree = "<group>"; };
 		E28D0BC91695B75A00134AFB /* Wireframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wireframe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28D0BCD1695B75A00134AFB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E28D0BCF1695B75A00134AFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,19 +107,16 @@
 		E28D0C221695B82300134AFB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E28D0C241695B82C00134AFB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E28D0C261695B83900134AFB /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
-		E2C45B5C1695E3230081E5FE /* accumilator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accumilator.jpg; sourceTree = "<group>"; };
-		E2C45B611695ECDD0081E5FE /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = ../ThirdViewController.h; sourceTree = "<group>"; };
-		E2C45B621695ECDD0081E5FE /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = ../ThirdViewController.m; sourceTree = "<group>"; };
+		E2C45B611695ECDD0081E5FE /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		E2C45B621695ECDD0081E5FE /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		E2CFE4C616B0494300DC59CB /* RRMaintenanceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMaintenanceEvent.h; sourceTree = "<group>"; };
 		E2CFE4C716B0494400DC59CB /* RRMaintenanceEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMaintenanceEvent.m; sourceTree = "<group>"; };
 		E2CFE4C916B0496500DC59CB /* RRPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPart.h; sourceTree = "<group>"; };
 		E2CFE4CA16B0496500DC59CB /* RRPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPart.m; sourceTree = "<group>"; };
 		E2CFE4FC16B140B500DC59CB /* RRPartType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPartType.h; sourceTree = "<group>"; };
 		E2CFE4FD16B140B500DC59CB /* RRPartType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPartType.m; sourceTree = "<group>"; };
-		E2CFE53D16B14F9500DC59CB /* RRImportCoreData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RRImportCoreData.sqlite; sourceTree = "<group>"; };
 		E2CFE57916B15A3F00DC59CB /* PartListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartListViewController.h; sourceTree = "<group>"; };
 		E2CFE57A16B15A3F00DC59CB /* PartListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartListViewController.m; sourceTree = "<group>"; };
-		E2EABDD2169DC7B500D8E210 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
 		E2F45AC316AFE3A0007F2083 /* PartCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PartCD.xcdatamodel; sourceTree = "<group>"; };
 		E2F45AE116AFF408007F2083 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E2F45AE316AFF983007F2083 /* RRPartStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPartStore.h; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 		E2F45AF316B01CA7007F2083 /* RRImageStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRImageStore.m; sourceTree = "<group>"; };
 		E2F5DC2916A01B5A001E8C55 /* Part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Part.h; sourceTree = "<group>"; };
 		E2F5DC2A16A01B5A001E8C55 /* Part.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Part.m; sourceTree = "<group>"; };
-		E2F5DC3016A04A69001E8C55 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourthViewController.h; path = ../FourthViewController.h; sourceTree = "<group>"; };
-		E2F5DC3116A04A69001E8C55 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourthViewController.m; path = ../FourthViewController.m; sourceTree = "<group>"; };
+		E2F5DC3016A04A69001E8C55 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		E2F5DC3116A04A69001E8C55 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		E2F5DC3316A04E28001E8C55 /* PartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartCell.h; sourceTree = "<group>"; };
 		E2F5DC3416A04E28001E8C55 /* PartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartCell.m; sourceTree = "<group>"; };
 		E2F5DC3616A04EA2001E8C55 /* PartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PartCell.xib; sourceTree = "<group>"; };
@@ -153,6 +153,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E20ADE2216B8115800047B37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E20ADE2316B8119700047B37 /* 1301512001.jpg */,
+				E20ADE2516B811B400047B37 /* RRL-Logo-Blue-16.10.12.png */,
+				E28D0BEB1695B75A00134AFB /* first.png */,
+				E28D0BED1695B75A00134AFB /* first@2x.png */,
+				E28D0BF21695B75A00134AFB /* second.png */,
+				E28D0BF41695B75A00134AFB /* second@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E28D0BBE1695B75A00134AFB = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +203,7 @@
 		E28D0BD31695B75A00134AFB /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				E2CFE53D16B14F9500DC59CB /* RRImportCoreData.sqlite */,
+				E20ADE2116B80A0400047B37 /* RRImportCoreData.sqlite */,
 				E2F45AF216B01CA7007F2083 /* RRImageStore.h */,
 				E2F45AF316B01CA7007F2083 /* RRImageStore.m */,
 				E2F5DC3616A04EA2001E8C55 /* PartCell.xib */,
@@ -220,10 +233,7 @@
 				E2C45B621695ECDD0081E5FE /* ThirdViewController.m */,
 				E2F5DC3016A04A69001E8C55 /* FourthViewController.h */,
 				E2F5DC3116A04A69001E8C55 /* FourthViewController.m */,
-				E28D0BEB1695B75A00134AFB /* first.png */,
-				E28D0BED1695B75A00134AFB /* first@2x.png */,
-				E28D0BF21695B75A00134AFB /* second.png */,
-				E28D0BF41695B75A00134AFB /* second@2x.png */,
+				E20ADE2216B8115800047B37 /* Resources */,
 				E28D0BD41695B75A00134AFB /* Supporting Files */,
 			);
 			path = Wireframe;
@@ -232,8 +242,6 @@
 		E28D0BD41695B75A00134AFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2EABDD2169DC7B500D8E210 /* photo1.png */,
-				E2C45B5C1695E3230081E5FE /* accumilator.jpg */,
 				E28D0BD51695B75A00134AFB /* Wireframe-Info.plist */,
 				E28D0BD61695B75A00134AFB /* InfoPlist.strings */,
 				E28D0BD91695B75A00134AFB /* main.m */,
@@ -360,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20ADE2716B8129100047B37 /* RRImportCoreData.sqlite in Resources */,
 				E28D0BD81695B75A00134AFB /* InfoPlist.strings in Resources */,
 				E28D0BE01695B75A00134AFB /* Default.png in Resources */,
 				E28D0BE21695B75A00134AFB /* Default@2x.png in Resources */,
@@ -373,10 +382,9 @@
 				E28D0C1B1695B7D700134AFB /* zbar-help.html in Resources */,
 				E28D0C1C1695B7D700134AFB /* zbar-helpicons.png in Resources */,
 				E28D0C1D1695B7D700134AFB /* zbar-samples.png in Resources */,
-				E2C45B5D1695E3230081E5FE /* accumilator.jpg in Resources */,
-				E2EABDD3169DC7B500D8E210 /* photo1.png in Resources */,
 				E2F5DC3716A04EA2001E8C55 /* PartCell.xib in Resources */,
-				E2CFE53E16B14F9500DC59CB /* RRImportCoreData.sqlite in Resources */,
+				E20ADE2416B8119700047B37 /* 1301512001.jpg in Resources */,
+				E20ADE2616B811B400047B37 /* RRL-Logo-Blue-16.10.12.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
